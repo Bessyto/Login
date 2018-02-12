@@ -35,7 +35,7 @@ class User
 
     /**
      * Sets the username
-     * @param string $_username pass the name of the pet
+     * @param string $_username pass the name of the user
      */
     function setUsername($_username)
     {

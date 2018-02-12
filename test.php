@@ -1,6 +1,8 @@
 <?php
 /**
- * The User class checks for user and password
+ * The User class checks for user and password.
+ * Creates object from the User class and an object from the Admin class. This Admin user, will receive
+ * in the editUser method, one of the user created and modify it.
  *
  * @author Zach Kunitsa
  * @author Bessy Torres-Miller
@@ -33,7 +35,8 @@ echo $User2->login("Bessy" , "123");
 //testing admin user
 echo "<br> <h3>Testing Admin Class</h3>";
 $Admin = new Admin("Bessyto", "Lince123", "admin");
-echo $Admin -> editUser($User1);
+echo $Admin -> editUser($User1);  //pass an user to the Admin class
 echo "<p> Getting Access Level : " . $Admin -> getAccessLevel() . "</p>";
 echo "<p> Setting Access Level : " . $Admin -> setAccessLevel("admin") . "</p>";
+
 
