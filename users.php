@@ -15,7 +15,6 @@ error_reporting(E_ALL);
  $arrays = array(
          "Kunitsa" => "zachabc",
          "username2" => "bessy",
-
  );
 
 
