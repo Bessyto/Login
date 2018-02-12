@@ -16,7 +16,6 @@ class User
     private $_password;
     private $_loggedIn;
 
-
     //Default constructor
     function __construct($_username = "", $_password = "", $_loggedIn = false)
     {
@@ -35,7 +34,7 @@ class User
     }
 
     /**
-     * Sets the usernname
+     * Sets the username
      * @param string $_username pass the name of the pet
      */
     function setUsername($_username)
@@ -52,9 +51,7 @@ class User
         if(strlen($_password) >= 6)
         {
             $this->_password = $_password;
-            echo "Password passed";
         }
-
     }
 
     /*
@@ -71,22 +68,16 @@ class User
 
         if(key_exists($_username , $arrays))
             {
-                echo "key found";
-
                 if($arrays[$_username]==$_password) {
-                    echo "<p>" . $_username . "is logged in </p>";
+                    echo "<p>" . $_username . " is logged in </p>";
                     $_loggedIn = true;
                 }
-
             }
             else
             {
                 echo "<p> Login error </p>";
                 $isValid = false;
             }
-
-
-
     }
 
     /*
@@ -94,13 +85,9 @@ class User
      */
     function logout()
     {
-
         $_loggedIn = false;
         $_username = "";
         $_password = "";
-
     }
-
-
 
 }
