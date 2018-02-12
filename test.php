@@ -36,7 +36,8 @@ echo $User2->login("Bessy" , "123");
 echo "<br> <h3>Testing Admin Class</h3>";
 $Admin = new Admin("Bessyto", "Lince123", "admin");
 echo $Admin -> editUser($User1);  //pass an user to the Admin class
+$Admin -> setAccessLevel("admin");
 echo "<p> Getting Access Level : " . $Admin -> getAccessLevel() . "</p>";
-echo "<p> Setting Access Level : " . $Admin -> setAccessLevel("admin") . "</p>";
+//echo "<p> Setting Access Level : " . $Admin -> setAccessLevel("admin") . "</p>";
 
 

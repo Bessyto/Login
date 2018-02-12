@@ -22,7 +22,7 @@ class Admin extends User
      */
     function __constructor($_userName, $_password, $_accessLevel)
     {
-        //parent::_constructor;
+        //parent::_construct($_userName, $_password);
         $this->_accessLevel = $_accessLevel;
 
         $this->setUserName($_userName);
